@@ -1,0 +1,724 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%; /* This ensures the container takes the full width of the viewport */
+    max-width: 1200px; /* Adjust this value to your preferred maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 1.5rem; /* Add padding to the left and right */
+    box-sizing: border-box; 
+}
+
+.badge {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    right: 0; /* Fixed on the right side */
+    transform: translateY(-30%); /* Center vertically */
+}
+
+.badge-2 {
+    display: none;
+}
+
+.score {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+}
+
+.main_content-2 {
+    display: none;
+}
+
+#extra-kontakt {
+    display: none;
+}
+
+header {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.spass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a:not(.doctor-contact-a) {
+    text-decoration: none;
+}
+
+.side-nav-a {
+    color: #404040;
+    font-weight: 300;
+    display: block;
+    letter-spacing: 0.02em;
+}
+
+.container .side-nav-a {
+    width: 100%;
+}
+
+.side-nav-li {
+    padding: 14px 10px;
+    border-top: 1px solid #CECECE;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.inhalte-side-nav:hover {
+    cursor: pointer;
+}
+
+.side-nav-li:hover .side-nav-a {
+    color:#1B5DD7;
+}
+
+.side-nav-li:hover #chevron_right {
+    opacity: 1;
+}
+
+ul:not(.in_text_list) {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+  }
+
+.seperation-bar{
+    background-color: #1B5DD7;
+    min-height: 60px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.875rem;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+.h2-besonders:not(#Einleitung) {
+    font-size: 1.125rem;
+    color: #1B5DD7;
+    font-weight: 600;
+    padding: 1.5rem 0 0.5rem 0;
+    border-bottom: 1px solid #1B5DD7;
+    letter-spacing: 0.01em;
+}
+
+#Einleitung {
+    font-size: 1.375rem;
+    color: #1B5DD7;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+img {
+    width: 272px;
+    height: auto;
+}
+
+.ueberunterschrift {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.875rem;
+    letter-spacing: 0.04em;
+}
+
+.side-nav {
+    width: 1800px;
+    margin-right: 25px;
+    position: sticky;
+    top: 0;
+}
+
+.seiten_titel {
+    margin-bottom: 30px;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    overflow: auto;
+    font-size: 11.6pt;
+    letter-spacing: 0.02em;
+}
+
+.in_text_list {
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    font-size: 11.6pt;
+}
+
+.kontakt-button {
+    display: flex;
+    align-items: center;
+    color:white;
+    background-color: #1B5DD7;
+    font-weight: 600;
+    padding: 10px 25px 10px 20px;
+    letter-spacing: 0.02em;
+    box-shadow: 4px 4px 0px #9FBEFF
+}
+
+.kontakt-button:hover {
+    box-shadow: 4px 4px 0px #3D3D3D
+}
+
+.material-symbols-outlined {
+    color: #1B5DD7;
+}
+
+#chevron_right {
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+footer {
+    background-color: #f0f0f0;
+    height: 160px;
+    margin-top: 100px;
+    padding-top: 20px;
+}
+
+.a_impressum {
+    display: flex;
+    justify-content: center; /* Horizontally center the link */
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.a_impressum a {
+    margin: 0 10px;
+    color: #757675;
+    font-size: 0.875rem;
+    letter-spacing: 0.03em;
+}
+
+.impressum {
+    text-align: center;
+    color: #757675;
+    font-size: .75rem;
+}
+
+.kontaktformular-titel-und-feld {
+    margin-top: 20px;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.01em;
+}
+
+.sternchen {
+    font-size: 0.7rem;
+    position: relative;
+    top: -0.4em;
+}
+
+input {
+    background-color:#f0f0f0;
+    margin-top: 7px;
+    height: 1.78rem;
+    padding: .75em 1em;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+}
+
+.textarea-message {
+    background-color:#f0f0f0;
+    margin-top: 7px;
+    padding: 1.25em 1em;
+    height: 120px;
+    width: 100% !important;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    box-sizing: border-box;
+}
+
+input:focus {
+    background-color: white;
+    outline: 1px solid #9FBEFF;
+}
+
+.textarea-message:focus {
+    background-color: white;
+    outline: 1px solid #9FBEFF;
+}
+
+#email {
+    width: 30rem;
+}
+
+#phone_number {
+    width:17rem; 
+}
+
+#submit {
+    padding: 0;
+    padding: 1em 2em 2.25em 2em;
+    background-color: #1B5DD7;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+#submit:focus {
+    background-color: white;
+    outline: 1px solid #9FBEFF;
+    color: #3D3D3D;
+}
+
+.kontakt-unten {
+    background-color: #1B5DD7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 560px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.kontakt-container {
+    padding-left: 30px;
+}
+
+#bild-vom-arzt {
+    height: 200px;
+    width: auto;
+}
+
+h3 {
+    margin: 0px;
+    color: white;
+    font-size: 15pt;
+    letter-spacing: 0.03em;
+}
+
+.doctor-contact-a {
+    color: white;
+    font-size: 9pt;
+    letter-spacing: 0.03em;
+}
+
+.doctor-contact-ul {
+    margin: 0px;
+    margin-top: 11px;
+}
+
+#Titelbezeichnung {
+    color: white;
+    font-size: 12pt;
+    margin: 0px;
+    margin-top: 3px;
+    letter-spacing: 0.03em;
+}
+
+.doctor-contact-li {
+    margin-bottom: 0px;
+}
+
+#letzter-li {
+    margin-bottom: 0;
+}
+
+.seperator-container {
+    display: flex;
+}
+
+#container-email {
+    flex: 2;
+}
+
+#container-phone {
+    flex: 1;
+}
+
+.kontakt-unten-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding: 4px 0px;
+}
+
+#bild-vom-arzt-2 {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.doctor-contact-p-2 {
+    color:#404040;
+    font-size: 8.5pt;
+    margin: 0px 0px;
+    letter-spacing: 0.02em;
+}
+
+.doctor-contact-li-2 {
+    padding-bottom: 3px;
+}
+
+.letzter-p-2 {
+    padding-bottom: 0px;
+}
+
+@media (max-width: 1650px) {
+    .badge {
+        display: none;
+    }
+
+    .badge-2 {
+        display: block;
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 1199px) {
+    
+    .container {
+        width: 100%; /* This ensures the container takes the full width of the viewport */
+        max-width: 991px; /* Adjust this value to your preferred maximum width */
+        margin: 0 auto; /* Center the container horizontally */
+        padding: 0 1.5rem; /* Add padding to the left and right */
+        box-sizing: border-box; 
+    }
+    
+    .seperation-bar {
+      display: none;
+    }
+
+    #email {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 991px) {
+    
+    .container {
+        width: 100%; /* This ensures the container takes the full width of the viewport */
+        max-width: 768px; /* Adjust this value to your preferred maximum width */
+        margin: 0 auto; /* Center the container horizontally */
+        padding: 0 1.5rem; /* Add padding to the left and right */
+        box-sizing: border-box; 
+    }
+    
+    .seperation-bar {
+        display: none;
+    }
+
+    .side-nav {
+        display: none;
+    }
+
+    .main_content-1 {
+        display: none;
+    }
+
+    .main_content-2 {
+        display: block;
+    }
+
+    .accordion input[type="checkbox"] {
+        display: none; /* Hide the checkboxes */
+    }
+
+    .accordion label {
+        cursor: pointer;
+    }
+
+    .accordion .accordion-content {
+        display: none;
+    }
+    
+    .accordion input[type="checkbox"]:checked + label + .accordion-content {
+        display: block;
+    }
+
+    .accordion-label {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        border-bottom: 2px solid #1B5DD7;
+    }
+
+    .accordion-label h2 {
+        border-bottom: none;
+        font-size: 1.125rem;
+        color: #1B5DD7;
+        font-weight: 600;
+        padding: 1.5rem 0 0.5rem 0;
+    }
+
+    #email {
+        width: 22rem;
+    }
+
+    #Behandelnder-Arzt {
+        margin-bottom: 0px !important;
+        padding-bottom: 22.94px !important;
+        border-bottom: 2px solid #1B5DD7 !important;
+    }
+
+    #message {
+        margin-right: 10px !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%; /* This ensures the container takes the full width of the viewport */
+        max-width: 528px; /* Adjust this value to your preferred maximum width */
+        margin: 0 auto; /* Center the container horizontally */
+        padding: 0 1.5rem; /* Add padding to the left and right */
+        box-sizing: border-box; 
+    }
+
+    .kontakt-unten {
+        background-color: #1B5DD7;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30em;
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+    
+    .kontakt-container {
+        padding-left: 30px;
+    }
+    
+    #bild-vom-arzt {
+        height: 11em;
+        width: auto;
+    }
+
+    .textarea-message {
+        box-sizing: border-box;
+        height: 10em;
+    }
+
+    #email {
+        width: 14rem;
+    }
+
+    #phone_number {
+        width: 10rem; 
+    }
+
+    .kontakt-unten-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 5em;
+        padding: 4px 0px;
+    }
+
+    .spass {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 26rem;
+        padding: 11px 0px 11px 0px;
+    }
+
+    #bild-vom-arzt-2 {
+        height: 26px;
+        width: auto;
+    }
+
+    .kontakt-button {
+        font-weight: 600;
+        padding: 7px 15px 7px 12px;
+    }
+
+    #extra-kontakt {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 50px 0px 50px;
+        margin-bottom: 60px;
+    }
+
+    .extra-kontakt-span {
+        color: #757675;
+        font-size: 7.3pt;
+    }
+
+    header {
+        margin: 0px;
+    }    
+
+    #logo {
+        width: 10rem;
+        height: auto;
+    }
+
+    .kontakt-container-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 528px) {
+    .container {
+        max-width: 100%;
+        /* Adjust this value to your preferred maximum width */
+        min-width: 100%;
+        /* Set a minimum width to prevent content from becoming too narrow */
+        margin: 0 auto;
+        /* Center the container horizontally */
+        padding: 0 1rem;
+        /* Add padding to the left and right */
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .spass {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    a.kontakt-button {
+        font-size: 13px;
+    }
+
+
+    .accordion-label {
+        align-items: center;
+    }
+
+    .accordion-label h2 {
+        margin: 0;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .kontakt-unten-2 {
+        width: auto;
+    }
+
+    #extra-kontakt {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section.main_content {
+        width: 100%;
+    }
+
+    input {
+        box-sizing: border-box;
+        width: 100% !important;
+        height: 2.5rem;
+    }
+
+    #submit {
+        width: auto !important;
+    }
+
+    .section.main_content {
+        width: 100%;
+    }
+
+    .seperator-container {
+        flex-direction: column;
+    }
+
+    .kontakt-unten {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 100%;
+        align-items: start;
+    }
+
+    #bild-vom-arzt {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-height: 176px;
+    }
+
+    .kontakt-unten * {
+        box-sizing: border-box;
+    }
+
+    .kontakt-container {
+        height: 100%;
+        overflow: hidden;
+        padding: 4vw;
+
+    }
+
+    .kontakt-container * {
+        font-size: min(10px, 2.5vw) !important;
+    }
+
+    .kontakt-container h3 {
+        font-size: min(15px, 4vw) !important;
+    }
+
+    #Titelbezeichnung {
+        font-size: min(15px, 3vw) !important;
+    }
+
+    .kontaktformular-titel-und-feld {
+        margin: 0;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .kontakt-unten {
+        display: flex;
+        flex-direction: column;
+        aspect-ratio: auto;
+    }
+
+    #Titelbezeichnung {
+        font-size: 12pt !important;
+    }
+
+    .doctor-contact-a {
+        font-size: 9pt !important;
+    }
+
+    .kontakt-container h3 {
+        font-size: 15pt !important;
+    }
+
+    #bild-vom-arzt {
+        max-height: 100%;
+    }
+
+    .kontakt-button {
+        font-size: 10px !important;
+    }
+
+    #bild-vom-arzt-2 {
+        margin-right: 10px;
+    }
+}
