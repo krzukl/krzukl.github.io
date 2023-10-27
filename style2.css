@@ -440,7 +440,8 @@ h3 {
         margin-bottom: 35px;
     }
 
-    #zl-url {
+    .zl-url {
+        position: fixed;
         left: 0;
     }
 }
