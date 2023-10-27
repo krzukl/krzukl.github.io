@@ -439,11 +439,6 @@ h3 {
         display: block;
         margin-bottom: 35px;
     }
-
-    .zl-url {
-        position: fixed;
-        left: 0;
-    }
 }
 
 @media (max-width: 1199px) {
